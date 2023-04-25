@@ -1,0 +1,147 @@
+* {
+  img {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+.wrapper {
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 43px 60px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  max-width: 245px;
+
+  img {
+    margin-right: 16px;
+  }
+}
+
+.header__info {
+
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9D9D9D;
+  }
+}
+
+.header__user-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5C5C5C;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.catalog {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 60px;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  padding: 20px 30px;
+  width: 220px;
+  box-sizing: border-box;
+
+  p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background: transparent;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+.card__price {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+  }
+
+  b {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
